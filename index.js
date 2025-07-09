@@ -1,8 +1,9 @@
+const { Client, GatewayIntentBits, Events, AttachmentBuilder, EmbedBuilder } = require('discord.js');
 const qrcode = require('qrcode');
 const { crc16ccitt } = require('crc');
 require('dotenv').config();
 
-const { DISCORD_TOKEN, BANK_BIN, BANK_NAME, ACCOUNT_NO, ACCOUNT_NAME, AUTHORIZED_USERS, PREFIX } = process.env; 
+const { DISCORD_TOKEN, BANK_BIN, BANK_NAME, ACCOUNT_NO, ACCOUNT_NAME, AUTHORIZED_USERS, PREFIX } = process.env;
 const authorizedUsers = AUTHORIZED_USERS ? AUTHORIZED_USERS.split(',') : [];
 
 function buildTLV(tag, value) {
@@ -82,19 +83,19 @@ client.on(Events.MessageCreate, async message => {
 
             const embed = new EmbedBuilder()
                 .setColor('#0099ff')
-                .setTitle('📱 THANH TOÁN CHUYỂN KHOẢN')
-                .setDescription('Vui lòng quét mã QR để thanh toán!')
+                .setTitle('🔰 Mã thanh toán VietQR')
+                .setDescription('Vui lòng quét mã QR dưới đây để thực hiện giao dịch.')
                 .addFields(
                     { name: '🏦 Ngân hàng', value: `\`${BANK_NAME || BANK_BIN}\`` },
                     { name: '👤 Chủ tài khoản', value: `\`${ACCOUNT_NAME}\`` },
                     { name: '💳 Số tài khoản', value: `\`${ACCOUNT_NO}\`` },
                     { name: '💰 Số tiền', value: `\`${amount.toLocaleString('vi-VN')} VND\`` },
-                    { name: 'ℹ️ Nội dung', value: `\`${content}\`` }
+                    { name: '💬 Nội dung', value: `\`${content}\`` }
                 )
                 .setImage('attachment://vietqr.png')
                 .setTimestamp()
-                .setFooter({ text: `Xin cảm ơn!` });
-            
+                .setFooter({ text: `Yêu cầu bởi ${message.author.tag}` });
+
             await message.reply({ embeds: [embed], files: [attachment] });
 
         } catch (error) {
