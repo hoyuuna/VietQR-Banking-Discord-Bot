@@ -83,18 +83,18 @@ client.on(Events.MessageCreate, async message => {
 
             const embed = new EmbedBuilder()
                 .setColor('#0099ff')
-                .setTitle('🔰 Mã thanh toán VietQR')
-                .setDescription('Vui lòng quét mã QR dưới đây để thực hiện giao dịch.')
+                .setTitle('📱 THANH TOÁN CHUYỂN KHOẢN')
+                .setDescription('Vui lòng quét mã QR để thanh toán')
                 .addFields(
                     { name: '🏦 Ngân hàng', value: `\`${BANK_NAME || BANK_BIN}\`` },
                     { name: '👤 Chủ tài khoản', value: `\`${ACCOUNT_NAME}\`` },
                     { name: '💳 Số tài khoản', value: `\`${ACCOUNT_NO}\`` },
                     { name: '💰 Số tiền', value: `\`${amount.toLocaleString('vi-VN')} VND\`` },
-                    { name: '💬 Nội dung', value: `\`${content}\`` }
+                    { name: 'ℹ️ Nội dung', value: `\`${content}\`` }
                 )
                 .setImage('attachment://vietqr.png')
                 .setTimestamp()
-                .setFooter({ text: `Yêu cầu bởi ${message.author.tag}` });
+                .setFooter({ text: `Xin cảm ơn!` });
 
             await message.reply({ embeds: [embed], files: [attachment] });
 
