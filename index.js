@@ -60,16 +60,22 @@ client.on(Events.MessageCreate, async message => {
     if (command === 'pay') {
         try {
             if (!args[0]) {
-                return message.reply('⚠️ Vui lòng nhập số tiền. Ví dụ: `!pay 20000`');
+                const replyMsg = await message.reply('⚠️ Vui lòng nhập số tiền. Ví dụ: `!pay 20000`');
+                setTimeout(() => replyMsg.delete(), 5000);
+                return;
             }
 
             const amount = parseInt(args[0]);
             if (isNaN(amount)) {
-                return message.reply('⚠️ Số tiền không hợp lệ. Vui lòng chỉ nhập số.');
+                const replyMsg = await message.reply('⚠️ Số tiền không hợp lệ. Vui lòng chỉ nhập số.');
+                setTimeout(() => replyMsg.delete(), 5000);
+                return;
             }
 
             if (amount < 5000 || amount > 99999999) {
-                return message.reply('⚠️ Số tiền phải từ `5,000` đến `99,999,999` VND.');
+                const replyMsg = await message.reply('⚠️ Số tiền phải từ `5,000` đến `99,999,999` VND.');
+                setTimeout(() => replyMsg.delete(), 5000);
+                return;
             }
 
             let content = args.slice(1).join(' ');
@@ -100,7 +106,8 @@ client.on(Events.MessageCreate, async message => {
 
         } catch (error) {
             console.error('Lỗi khi tạo QR:', error);
-            await message.reply('❌ Đã xảy ra lỗi khi tạo mã QR. Vui lòng thử lại.');
+            const replyMsg = await message.reply('❌ Đã xảy ra lỗi khi tạo mã QR. Vui lòng thử lại.');
+            setTimeout(() => replyMsg.delete(), 5000);
         }
     }
 });
