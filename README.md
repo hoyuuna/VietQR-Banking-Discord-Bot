@@ -18,7 +18,7 @@ Mã nguồn có thể được chỉnh sửa cho mục đích cá nhân/thương
 2. Chỉnh sửa file `env.example`, làm theo hướng dẫn trong file và lưu lại, đổi tên thành `.env`
 3. Chạy bot với NodeJS 23 (khuyến cáo), file startup là `index.js`
 4. Nếu host không thể tự động nhận các packages cần thiết hãy chạy lệnh `npm install dotenv crc qrcode discord.js`
-5. Sử dụng `h!pay [giá tiền] [nội dung (không bắt buộc)] để bắt đầu sử dụng
+5. Sử dụng `h!pay [giá tiền] [nội dung (không bắt buộc)]` để bắt đầu sử dụng
 
 ## Update
 
