@@ -14,7 +14,7 @@ Mã nguồn có thể được chỉnh sửa cho mục đích cá nhân/thương
 
 ## Hướng dẫn sử dụng
 
-1. Download/repository này hoặc để Git Repo Address (nếu dùng DV host bên thứ 3)
+1. Download/clone repository này hoặc để Git Repo Address (nếu dùng DV host bên thứ 3)
 2. Chỉnh sửa file `env.example`, làm theo hướng dẫn trong file và lưu lại, đổi tên thành `.env`
 3. Chạy bot với NodeJS 23 (khuyến cáo), file startup là `index.js`
 4. Nếu host không thể tự động nhận các packages cần thiết hãy chạy lệnh `npm install dotenv crc qrcode discord.js`
