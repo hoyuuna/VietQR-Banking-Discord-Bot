@@ -1,0 +1,45 @@
+
+#============================================================
+# Danh sách mã BIN
+#============================================================
+
+Ngân hàng TMCP Ngoại Thương Việt Nam (Vietcombank): 970436
+Ngân hàng TMCP Á Châu (ACB): 970416
+Ngân hàng TMCP Xuất nhập khẩu Việt Nam (Eximbank): 970431
+Ngân hàng TMCP Tiên Phong (TPBank): 970423
+Ngân hàng TMCP Sài Gòn Hà Nội (SHB): 970443
+Ngân hàng TMCP Phát Triển Thành Phố Hồ Chí Minh (HDBank): 970437
+Ngân hàng TMCP Quân Đội (MB): 970422
+Ngân hàng TM TNHH MTV Dầu Khí Toàn Cầu (GPBank): 970408
+Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank): 970432
+Ngân hàng TMCP Quốc tế Việt Nam (VIB): 97044168, 970414
+Ngân hàng TMCP Việt Á (VietABank): 970427
+Ngân hàng TMCP Kỹ thương Việt Nam (Techcombank): 970407
+Ngân hàng TMCP Phương Đông (OCB): 970448
+Ngân hàng TMCP Quốc Dân (NCB): 970419
+Ngân hàng TNHH MTV Hongleong Việt Nam (Hongleong Bank): 970442
+Ngân hàng TMCP Bưu Điện Liên Việt (LienVietPostBank): 970449
+Ngân hàng TMCP An Bình (ABBank): 970415
+Ngân hàng TMCP Bắc Á (Bac A Bank): 970409
+Ngân hàng TMCP Bảo Việt (BaoViet Bank): 970438
+Ngân hàng TNHH MTV Shinhan Việt Nam (Shinhan Bank): 970424
+Ngân hàng TNHH MTV Public Việt Nam (Public Bank): 970439
+Ngân hàng TMCP Đông Nam Á (SeABank): 970440
+Ngân hàng TMCP Sài Gòn (SCB): 970429
+Ngân hàng TMCP Hàng Hải Việt Nam (MSB): 970426
+Ngân hàng TMCP Đầu tư và Phát triển Việt Nam (BIDV): 970418
+Ngân hàng TMCP Đông Á (DongA Bank): 970406
+Ngân hàng TMCP Kiên Long (Kienlongbank): 970452
+Ngân hàng TMCP Xăng Dầu Petrolimex (PG Bank): 970430
+Ngân hàng TMCP Sài Gòn Công Thương (Saigonbank): 970400
+Ngân hàng Nông Nghiệp và Phát triển Nông Thôn Việt Nam (Agribank): 970405
+Ngân hàng TMCP Đại Chúng Việt Nam (PVcomBank): 970412
+Ngân hàng Liên doanh Việt Nga (VRB): 970421
+Ngân hàng TMCP Bản Việt (Viet Capital Bank): 970454
+Ngân hàng TMCP Nam Á (Nam A Bank): 970428
+Ngân hàng TNHH Indovina (IVB): 970434
+Ngân hàng Woori Việt Nam (Woori Bank): 970457
+Hợp tác xã Việt Nam (Co-op Bank): 970446
+Ngân hàng TNHH MTV United Overseas Bank (UOB): 970458
+Kookmin - Chi nhánh Hà Nội: 970462
+Kookmin - Chi nhánh Thành phố Hồ Chí Minh: 970463
