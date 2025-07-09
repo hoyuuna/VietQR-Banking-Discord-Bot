@@ -4,6 +4,8 @@ Dự án mã nguồn mở bởi Hoyuuna, người dùng chịu toàn bộ trách
 
 Mã nguồn có thể được chỉnh sửa cho mục đích cá nhân/thương mại mà không cần xin phép/credit
 
+Bot hoạt động trên phương thức decode/encode mã QR, không phải theo cách chính thức nên sau này có thể VietQR sẽ patch lại
+
 ## Bot này khác gì các bot khác?
 
 - HoyuPay hỗ trợ người bán hàng trên Discord có thể cho mệnh giá, điền thông tin sẵn cho khách hàng
@@ -18,7 +20,7 @@ Mã nguồn có thể được chỉnh sửa cho mục đích cá nhân/thương
 2. Chỉnh sửa file `env.example`, làm theo hướng dẫn trong file và lưu lại, đổi tên thành `.env`
 3. Chạy bot với NodeJS 23 (khuyến cáo), file startup là `index.js`
 4. Nếu host không thể tự động nhận các packages cần thiết hãy chạy lệnh `npm install dotenv crc qrcode discord.js`
-5. Sử dụng `h!pay [giá tiền] [nội dung (không bắt buộc)]` để bắt đầu sử dụng
+5. Sử dụng `!pay [giá tiền] [nội dung (không bắt buộc)]` để bắt đầu sử dụng
 
 ## Update
 
