@@ -58,22 +58,23 @@ client.on(Events.MessageCreate, async message => {
     const command = args.shift().toLowerCase();
 
     if (command === 'pay') {
+        await message.delete();
         try {
             if (!args[0]) {
-                const replyMsg = await message.reply('⚠️ Vui lòng nhập số tiền. Ví dụ: `!pay 20000`');
+                const replyMsg = await message.channel.send('⚠️ Vui lòng nhập số tiền. Ví dụ: `!pay 20000`');
                 setTimeout(() => replyMsg.delete(), 5000);
                 return;
             }
 
             const amount = parseInt(args[0]);
             if (isNaN(amount)) {
-                const replyMsg = await message.reply('⚠️ Số tiền không hợp lệ. Vui lòng chỉ nhập số.');
+                const replyMsg = await message.channel.send('⚠️ Số tiền không hợp lệ. Vui lòng chỉ nhập số.');
                 setTimeout(() => replyMsg.delete(), 5000);
                 return;
             }
 
             if (amount < 5000 || amount > 99999999) {
-                const replyMsg = await message.reply('⚠️ Số tiền phải từ `5,000` đến `99,999,999` VND.');
+                const replyMsg = await message.channel.send('⚠️ Số tiền phải từ `5,000` đến `99,999,999` VND.');
                 setTimeout(() => replyMsg.delete(), 5000);
                 return;
             }
@@ -102,11 +103,11 @@ client.on(Events.MessageCreate, async message => {
                 .setTimestamp()
                 .setFooter({ text: `Xin cảm ơn!` });
 
-            await message.reply({ embeds: [embed], files: [attachment] });
+            await message.channel.send({ embeds: [embed], files: [attachment] });
 
         } catch (error) {
             console.error('Lỗi khi tạo QR:', error);
-            const replyMsg = await message.reply('❌ Đã xảy ra lỗi khi tạo mã QR. Vui lòng thử lại.');
+            const replyMsg = await message.channel.send('❌ Đã xảy ra lỗi khi tạo mã QR. Vui lòng thử lại.');
             setTimeout(() => replyMsg.delete(), 5000);
         }
     }
