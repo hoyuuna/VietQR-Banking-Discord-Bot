@@ -30,10 +30,11 @@ Bot hoạt động trên phương thức decode/encode mã QR, không phải the
 - Nhắc hẹn chu kì thanh toán
 - Ngoài ra chưa nghĩ ra thêm gì :)
 
+### 1.1 (hiện tại)
+
+- Hỗ trợ xóa tin nhắn trigger giúp chat gọn gàng hơn
+
 ### 1.0
 
 - Phiên bản đầu tiên của HoyuPay
 
-### 1.1 (hiện tại)
-
-- Hỗ trợ xóa tin nhắn trigger giúp chat gọn gàng hơn
